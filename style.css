@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+body {
+    background: linear-gradient(45deg,rgb(49, 75, 82),rgb(0, 0, 0),rgb(23, 94, 110),black);
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    animation: cambiar 10s ease-in-out infinite;
+}
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 320px;
+    min-height: 480px;
+    height: auto;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 70px;
+    padding: 30px 5px 20px 5px;
+}
+.header--container {
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 90px 200px;
+    grid-template-rows: auto;
+    place-content: center;
+    align-items: center;
+}
+.logo-header {
+    height: 80px;
+    background-image: url('./assets/img/wikilogo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(-1px -2px 10px rgb(14, 225, 232));
+}
+.header-title--container {
+    
+    filter: drop-shadow(1px 1px 3px rgb(14, 225, 232));
+}
+.header-title--container h1{
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    margin-bottom: 5px;
+}
+.header-title--container h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    padding-left: 5px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.mainC1-input--container {
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.sectionC2-input--container {
+    display: grid;
+    max-width: 452px;
+    margin: 0 auto;
+    grid-template-columns: auto 56px;
+    grid-auto-rows: 44px;
+    border-radius: 2px;
+    overflow: hidden;
+    background: linear-gradient(180deg,#fbfbfb, rgb(40, 192, 197));
+}
+.sectionC2-input--container:hover {
+    box-shadow: 0 0 20px rgb(54 179 192 / 70%);
+    
+}
+.container__input {
+    width: 100%;
+}
+.container__input input {
+    width: 99%;
+    height: 90%;
+    border: none;
+    background-color: #222222;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    padding-left: 10px;
+    margin: 2px 0 2px 3px;
+    outline: none;
+}   
+.container__search {
+    display: grid;
+    grid-template-columns: 22px;
+    grid-template-rows: 22px;
+    place-content: center;
+    width: 99%;
+    height: 90%;
+    margin: 2px 2px 3px 0;
+    cursor: pointer;
+}
+.container__search .search_img {
+    background-image: url('./assets/icon/search-26241.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainC1-lenguage--container {
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+.lenguageC2-grid--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 62px;
+    align-items: center;
+    gap: 15px;
+    max-width: 452px;
+    margin: 0 auto;
+    /* grid-template-rows: 45px; media */
+}
+.lenguageC2-grid--container .span-container:hover {
+    background: linear-gradient(180deg,#fbfbfb, rgb(40, 192, 197));
+    color: #222222;
+}
+.lenguageC2-grid--container .span-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.span-container .span_tex {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+}
+.span-container .span_tex__up {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.mainC1-button--container {
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.button--container__C2 {
+    display: grid;
+    grid-template-columns: auto 264px auto;
+    grid-template-rows: 35px;
+    text-align: center;
+    gap: 5px;
+    max-width: 452px;
+    margin: 0 auto;
+}
+.button--container__C2 button {
+    font-size: 1.4rem;
+    font-weight: 500;
+    background: linear-gradient(180deg,#fbfbfb, rgb(40, 192, 197));
+    border: none;
+    border-radius: 2px;
+}
+.button--container__C2 button:hover {
+    box-shadow: 0 0 20px rgb(54 179 192 / 70%);
+}
+.button--container__C2 hr {
+    align-self: center;
+    height: 0;
+    border: 0.5px solid;
+    color: white;
+    
+}
+footer {
+    width: 100%;
+    
+}
