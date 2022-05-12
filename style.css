@@ -77,6 +77,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding-bottom: 30px;
 }
 .mainC1-input--container {
     width: 95%;
@@ -155,6 +156,7 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    cursor: pointer;
 }
 .span-container .span_tex {
     font-size: 1.6rem;
@@ -187,6 +189,7 @@ main {
     background: linear-gradient(180deg,#fbfbfb, rgb(40, 192, 197));
     border: none;
     border-radius: 2px;
+    cursor: pointer;
 }
 .button--container__C2 button:hover {
     box-shadow: 0 0 20px rgb(54 179 192 / 70%);
@@ -196,8 +199,16 @@ main {
     height: 0;
     border: 0.5px solid;
     color: white;
-    
 }
+.hr-end-main {
+    width: 90%;
+    margin: 0 auto;
+    height: 0;
+    border: 0.5px solid;
+    color: white;
+    margin-top: 10px;
+}
+
 footer {
     width: 100%;
     
